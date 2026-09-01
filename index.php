@@ -34,7 +34,7 @@ if ($total > $budget) {
 
 <div class="container">
 
-    <h1 style="color: #3399ff;"> Student Expense & Budget Manager</h1>
+    <h1 style="color: #06b41e;"> Student Expense & Budget Manager</h1>
 
     <div class="cards">
 

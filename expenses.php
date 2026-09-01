@@ -70,9 +70,9 @@ $total = calculateTotal($expenses);
     <h1>All Expenses</h1>
 
     <table border="1" width="100%">
-      <th>Action</th>
+      
         <tr>
-
+             <th>Action</th> 
             <th>ID</th>
             <th>Name</th>
             <th>Amount</th>

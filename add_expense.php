@@ -35,8 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <title>Add Expense</title>
 
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>

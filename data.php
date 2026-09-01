@@ -1,6 +1,6 @@
 <?php
 
-$budget = 3000;
+$budget = 5000;
 
 $expenses = [
     [
@@ -22,6 +22,13 @@ $expenses = [
         "name" => "Books",
         "amount" => 2000,
         "category" => "Education"
+    
+    ],
+        [
+        "id" => 4,
+        "name" => "Movie",  
+        "amount" => 800,
+        "category" => "Entertainment"
     ]
 ];
 

@@ -1,8 +1,13 @@
 <?php
+session_start();
+
+if (!isset($_SESSION["user_name"]) || !isset($_SESSION["user_email"])) {
+    header("Location: login.php");
+    exit();
+}
 
 include "data.php";
 include "functions.php";
-
 $total = calculateTotal($expenses);
 $remaining = calculateRemaining($budget, $total);
 if ($total > $budget) {
@@ -31,7 +36,10 @@ if ($total > $budget) {
 </head>
 
 <body>
-
+    <div style="text-align: center; margin-top: 20px;">
+ <h2>Welcome <?php echo $_SESSION['user_name']; ?></h2>
+ <h2>Email: <?php echo $_SESSION['user_email']; ?></h2>
+</div>
 <div class="container">
 
     <h1 style="color: #06b41e;"> Student Expense & Budget Manager</h1>
